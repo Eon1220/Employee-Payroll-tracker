@@ -6,7 +6,12 @@ const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
   const firstName = window.prompt("Please enter employee's name:");
   const lastName = window.prompt("Please enter employee's last name:");
-  const salary = parseFloat(window.prompt("Please enter employee's salary:"));
+  let salary = parseFloat(window.prompt("Please enter employee's salary:"));
+  while (!/^[0-9]+$/.test(salary)) {
+    alert("You did not enter a number.");
+    salary = parseFloat(window.prompt("Please enter employee's salary:"));
+  }
+
   const again = window.confirm("would you like to add another employee?");
 
   console.log(firstName);
@@ -17,8 +22,7 @@ const collectEmployees = function() {
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
-   
-
+  
 }
 
 // Select a random employee
