@@ -16,3 +16,4 @@ N/A
 ## Credits
 - Nicolas pace: code additions
 - UNCC: starter code
+- Fellow classmates: for helping figure things out while i was stuck
